@@ -1,0 +1,70 @@
+/* RecipeDetails.css */
+.recipe-details {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .recipe-details h2 {
+    color: #5500b7;
+  }
+  
+  .recipe-details p {
+    margin: 10px 0;
+  }
+  
+  .recipe-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recipe-details li {
+    margin-bottom: 5px;
+  }
+  
+  /* Add the following styles to your CSS file or style section */
+  /* RecipeDetails.css */
+.ingredient-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  
+  .ingredient-card-view {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    cursor:context-menu;
+  }
+  
+  .ingredient-card-view:hover {
+    background-color: #f8f8f8;
+    cursor:context-menu;
+  }
+  
+
+
+  .authorName{
+    font-size: small;
+  }

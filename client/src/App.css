@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&family=Rubik+Doodle+Shadow&display=swap");
+*{
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f2ff; 
+  color: #333; 
+}
+
+/* Navbar */
+.navbar {
+  font-family: "Figtree", sans-serif;
+  background-color: #6a5acd; 
+  color: #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #ffffff; 
+  color: #6a5acd; 
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Main Body */
+.main-body {
+  padding: 20px;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recipe-card {
+  background-color: #ffffff; 
+  border: 1px solid #dddddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 {
+  color: #6a5acd; 
+}
+
+.recipe-card p {
+  margin-bottom: 10px;
+}
+
+.recipe-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-card li {
+  margin-bottom: 5px;
+  color: #6a5acd; 
+}
+
+.auth-buttons button.logout-btn {
+  background-color: #6a5acd; 
+  color: #ffffff; 
+}
+
+/* .logoRealm {
+  display: inline-block;
+  background: linear-gradient(to right, #ffffff, #5500b7);
+  color: transparent;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+  padding-left: 5px; 
+  padding-right: 5px; 
+}
+
+.logoRealm:hover {
+  background-position: 0 0;
+  color: #ffffff;
+  transition: background-position 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+@keyframes changeGradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+} */
+
+.logo {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logoRealm {
+  background-image: linear-gradient(45deg, #ac93ff, #e496fe);
+  color: transparent;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position 0.2s ease, color 0.2s ease;
+  animation: gradientMove 5s linear infinite;
+
+}
+
+.logoRealm:hover {
+  background-position: 100% 0;
+  color: #fff; 
+}
+
+.logo:hover{
+  .logoRealm{
+    background-position: 100% 0;
+    color: #fff; 
+  }
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+.ingredientListHomePage{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.HomePageIngredients{
+  font-size:small;
+  background-color: #a75aff9b;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.search-bar {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  max-width: 80%;
+  transition: width 0.3s ease; 
+
+}
+
+/* .search-bar input:active {
+  width: 500px; 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+} */
+
+.clear-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.clear-icon:hover {
+  color: #4d01ff;
+}
+
+
+.descHome{
+  font-size: small;
+}
+
+.return-button {
+  color: white;
+  padding: 10px;
+  background: #6a5acd;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.return-button:hover {
+  background-color: #5500b7; 
+}
